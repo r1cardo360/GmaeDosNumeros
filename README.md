@@ -10,4 +10,4 @@ Para jogar o jogo é muito simples basta abrir no seu navegador com o link e ten
 que o computador vai chutar.
 Você terá 10 chances 
 
-#Link Do Game [  ]
+#Link Do Game: https://reliable-kleicha-967096.netlify.app/
