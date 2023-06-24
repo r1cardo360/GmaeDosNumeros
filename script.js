@@ -1,3 +1,5 @@
+/* Variaveis do documento*/
+
 var numeroAleatorio = Math.floor(Math.random() * 100) + 1;
 
 var palpites = document.querySelector('.palpites');
