@@ -36,9 +36,9 @@ function conferirPalpite(){
         ultimoResultado.textContent = 'Errado';
         ultimoResultado.setAttribute('style','background-Color:red;padding:0.125rem 3.125rem;border-Radius:0.625rem;');
         if (palpiteUsuario < numeroAleatorio){
-            baixoOuAlto.textContent = 'Seu palpite está MUITO BAIXO!';
+            baixoOuAlto.innerHTML = 'Seu palpite está: <b> MUITO BAIXO! </b>';
         }else if(palpiteUsuario > numeroAleatorio){
-            baixoOuAlto.innerHTML = "Seu palpite está <b> MUITO ALTO! </b>";
+            baixoOuAlto.innerHTML = 'Seu palpite está: <b> MUITO ALTO! </b>';
         }
     }
 
@@ -80,3 +80,14 @@ function reiniciarjogo(){
 
     numeroAleatorio = Math.floor(Math.random() * 100 ) + 1;
 }
+
+
+document.addEventListener('keydown',function(e){
+    if(e.key === 'Enter'){
+        if(envioPalpite.disabled){
+            reiniciarjogo();
+        }else{
+            conferirPalpite();
+        }
+    }
+})
