@@ -1,22 +1,22 @@
 /* Variaveis do documento*/
 
-var numeroAleatorio = Math.floor(Math.random() * 100) + 1;
+let numeroAleatorio = Math.floor(Math.random() * 100) + 1;
 
-var palpites = document.querySelector('.palpites');
-var ultimoResultado = document.querySelector('.resultados');
-var baixoOuAlto = document.querySelector('.altobaixo');
+const palpites = document.querySelector('.palpites');
+const ultimoResultado = document.querySelector('.resultados');
+const baixoOuAlto = document.querySelector('.altobaixo');
 
-var envioPalpite = document.querySelector('.enviarpalpite');
-var campoPalpite = document.querySelector('.CampoPalpite');
-var div = document.querySelector('.botaoIniciaNovoJogo');
+const envioPalpite = document.querySelector('.enviarpalpite');
+const campoPalpite = document.querySelector('.CampoPalpite');
+const div = document.querySelector('.botaoIniciaNovoJogo');
 
-var contagemPalpite = 1;
-var botaoReinicio;
+let contagemPalpite = 1;
+let botaoReinicio;
 
 campoPalpite.focus();
 
 function conferirPalpite(){
-    var palpiteUsuario = Number(campoPalpite.value);
+    let palpiteUsuario = Number(campoPalpite.value);
     if (contagemPalpite === 1){
         palpites.textContent = 'palpites anteriores: ';
     } 
@@ -65,7 +65,7 @@ function configFimDeJogo(){
 function reiniciarjogo(){
     contagemPalpite = 1;
 
-    var reiniciarParas = document.querySelectorAll('.caixaresultados p');
+    const reiniciarParas = document.querySelectorAll('.caixaresultados p');
     for (var i = 0; i < reiniciarParas.length; i++){
         reiniciarParas[i].textContent = '';
     }
