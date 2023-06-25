@@ -1,4 +1,5 @@
 :root{
+
     --cor-de-fundo: #CCCCCC;
     --cor-degrade1: #808080;
     --cor-degrade2: #327C7F;
@@ -8,14 +9,15 @@
     --font-texto: 'Nunito', sans-serif;
 }
 
-html{
-   height: 100%;
+p{
+    margin:0px;
 }
 
-body{
+.containerprincipal{
+    width: 100vw;
+    height:100vh ;
     display: flex;
-    border: 0px;
-    min-height: 100%;
+    margin-top: auto;
     background-color: var(--cor-de-fundo);
     justify-content: center;
     align-items: center;
@@ -37,12 +39,22 @@ body{
     background: -webkit-linear-gradient(left, var(--cor-degrade1), var(--cor-degrade2));
     -webkit-background-clip: text;
     -webkit-text-fill-color: transparent;
+    font-size: 1.3rem;
 }
 
 .texto{
     color: var(--cor-do-texto);
     font-family: var(--font-texto);
-    width: 31.25rem;
+    width: 17rem;
+    font-size: 1rem;
+}
+
+.form, .caixaresultados{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    row-gap: 1rem;
 }
 
 .CampoPalpite{
@@ -50,18 +62,24 @@ body{
 }
 
 .enviarpalpite{
-    width: 9.375rem;
+    width: 13.375rem;
     border: 0.063rem solid;
     border-radius: 3.125rem;
+    background-color: var(--cor-do-texto);
+    color: var(--cor-degrade2);
+    font-weight: 600;
+    font-size: 1rem;
 }
 
-.resultados{
-    display: inline-block;
-    width: auto;
+.enviarpalpite:active{
+    background-color: var(--cor-degrade2);
+    color: var(--cor-do-texto);
 }
 
 .lblDigiteseuPalpite, .palpites, .altobaixo {
     font-family: var(--font-texto);
-    font-size: 20px;
+    font-size: 1.3;
 }
 
+@media screen and (max-width: 390px ){
+}

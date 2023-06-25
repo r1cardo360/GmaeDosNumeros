@@ -3,31 +3,34 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="rest.css">
     <link rel="stylesheet" href="style.css">
     <title>Jogo da advinhação</title>
 </head>
 <body>
 
-    <div class="container">
-        <h1 class="titulo">Jogo Adivinhe o Numero</h1>
+    <div class="containerprincipal">
+        <div class="container">
+            <h1 class="titulo">Jogo Adivinhe o Numero</h1>
 
-        <p class="texto">Selecionamos um número aleatório entre 1 e 100. Veja se consegue adivinhar em 10 chances ou 
-        menos. Nós lhe diremos se seu palpite está com valor alto ou baixo.
-        </p>
-    
-        <div class="form">
-            <label class="lblDigiteseuPalpite" for="palpite">Digite seu palpite</label>
-            <input type="number" min="1" max="100" required id="CampoPalpite" class="CampoPalpite">
-            <input type="submit" value="Enviar Palpite" class="enviarpalpite">
-        </div>
+            <p class="texto">Selecionamos um número aleatório entre 1 e 100. Veja se consegue adivinhar em 10 chances ou 
+            menos. Nós lhe diremos se seu palpite está com valor alto ou baixo.
+            </p>
+        
+            <div class="form">
+                <label class="lblDigiteseuPalpite" for="palpite">Digite seu palpite</label>
+                <input type="number" min="1" max="100" required id="CampoPalpite" class="CampoPalpite">
+                <input type="submit" value="Enviar Palpite" class="enviarpalpite">
+            </div>
 
-        <div class="caixaresultados">
-            <p class="palpites"></p>
-            <p class="resultados"></p>
-            <p class="altobaixo"></p>
-        </div>
-        <div class="botaoIniciaNovoJogo">
+            <div class="caixaresultados">
+                <p class="palpites"></p>
+                <p class="resultados"></p>
+                <p class="altobaixo"></p>
+            </div>
+            <div class="botaoIniciaNovoJogo">
 
+            </div>
         </div>
     </div>
     <script src="script.js"></script>
